@@ -41,8 +41,8 @@ class Calculator:
 class CaloriesCalculator(Calculator):
 
     def get_calories_remained(self):
-        if self.today_remained() > 0:
-            today_remained = self.today_remained()
+        today_remained = self.today_remained()
+        if today_remained > 0:
             return ('Сегодня можно съесть что-нибудь ещё, но с общей'
                     f' калорийностью не более {today_remained} кКал')
         return 'Хватит есть!'
